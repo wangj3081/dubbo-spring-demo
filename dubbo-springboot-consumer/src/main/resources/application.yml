@@ -1,0 +1,10 @@
+server:
+  port: 8181
+spring:
+  dubbo:
+    application:
+      name: consumer
+    registry:
+        address: zookeeper://192.168.134.167:2181    # 注册中心地址
+    scan: dubbo.springboot.demo.member.service # 需要暴露的服务接口
+

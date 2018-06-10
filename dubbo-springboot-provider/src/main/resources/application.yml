@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  dubbo:
+    application:
+      name: provider  # 服务名称
+    registry:
+      address: zookeeper://192.168.134.167:2181    # 注册中心地址
+    protocol:
+      name: dubbo # dubbo 协议
+      port: 20080
+    scan: dubbo.springboot.demo.member.service # 需要暴露的服务接口所在包
